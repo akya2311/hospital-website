@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
-function App() {
+// Import the ServiceProvider and other components
+
+import Header from './component/header/Header';
+import HomePage from './component/homePage/HomePage';
+import Footer from './component/footer/Footer';
+import Insurance from './component/insurance/Insurance';
+import ContactUs from './component/contactUs/ContactUs';
+import TabContent from './component/tabContent/TabContent';
+import AboutHospitalAndDocter from './component/aboutHospitalAndDocter/AboutHospitalAndDocter';
+import AboutDocter from './component/aboutDocter/AboutDocter';
+import SocialNav from './component/socialNav/SocialNav';
+import Whatsapp from './component/whatsapp/Whatsapp';
+import Testimonial from './component/testimonial/Testimonial';
+import Gallery from './component/gallery/Gallery';
+import VaccinationGallery from './component/gallery/VaccinationGallery';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Header />
+        <SocialNav />
+        <Whatsapp />
+        
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/insurance" element={<Insurance />} />
+          <Route path="/patientstories" element={<TabContent />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/about-hospital" element={<AboutHospitalAndDocter />} />
+          <Route path="/about-docter" element={<AboutDocter />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/vaccinationGallery" element={<VaccinationGallery />} />
+        </Routes>
+        
+        <Footer />
+      </Router>
   );
-}
+};
 
 export default App;

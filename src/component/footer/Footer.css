@@ -1,0 +1,252 @@
+.footer {
+    background-color: black !important;
+    color: #EFF5FF;
+   
+    display: flex;
+    
+    padding: 40px;
+    
+    width: 100%;
+
+    
+  }
+  .heading{
+    color: #76bb3e !important;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.25rem;
+  }
+  
+  .copyright{
+    margin-left: 80px;
+  }
+
+  
+  .col-md-6 {
+    text-align: left;
+    padding-right: calc(var(--gutter-x) / 2);
+    padding-left: calc(var(--gutter-x) / 2);
+    margin-top: var(--gutter-y);
+  }
+  
+  /* Footer description text */
+  .footer-description {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer image styling */
+  .footer-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Google review image */
+  .google-review-logo {
+    max-width: 180px;
+    transition: transform 0.3s ease;
+  }
+  
+  .google-review-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive behavior for mobile */
+  @media (max-width: 768px) {
+    .col-lg-3,
+    .col-md-6 {
+      width: 100%;
+      
+    }
+  }
+  
+
+  /* Root theme colors */
+
+
+/* Footer column styles */
+.acr{
+    color: #76bb3e !important;
+}
+
+
+
+a.btn-link {
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a.btn-link:hover {
+    color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 25%;
+    }
+}
+
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-link:hover {
+    color: #034fc8;
+}
+.btn:hover {
+    color: #8D8E92;
+}
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.col-lg-3{
+    width:300px;
+}
+
+
+
+/* Social Media Buttons */
+.d-flex {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    padding-top: 0.5rem; /* Adjust top padding */
+}
+
+
+
+.btn-outline-light {
+    color: var(--white); /* White text for button */
+    background-color: transparent; /* Transparent background */
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white); /* Background color on hover */
+    color: var(--dark); /* Text color changes to dark on hover */
+}
+
+.btn-outline-light i {
+    transition: transform 0.3s; /* Transition for icon on hover */
+}
+
+.btn-outline-light:hover i {
+    transform: scale(1.1); /* Scale icon slightly on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .btn-social {
+        width: 30px; /* Slightly smaller on mobile */
+        height: 30px; /* Slightly smaller on mobile */
+    }
+
+    .btn-social i {
+        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+    }
+}
+.btn-link{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.link-text{
+    font-weight: bold;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1344px;
+    max-height: 467px;
+}
+
+.bi-chevron-compact-right{
+    margin-right: 10px;
+}
+
+.btn-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Adjust the font size for the link text */
+    font-weight: 600; /* Adjust the font weight for the link text */
+}
+
+.btn-link svg {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
+    fill: currentColor; 
+}
+
+
+.btn-social {
+    margin-right: 8px; /* Space between buttons */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Adjust button width */
+    height: 35px; /* Adjust button height */
+    font-size: 15px; /* Increase icon size for better visibility */
+    border-style: solid;
+    /* White border for buttons */
+    transition: background-color 0.3s, color 0.3s; 
+  /* /* Center the icon vertically */
+    font-size: 1.1rem; /* Adjust icon size */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 576px) {
+    .btn-social {
+        width: 40px; /* Smaller size for mobile */
+        height: 40px; /* Smaller size for mobile */
+        font-size: 1rem; /* Smaller icon size */
+    }
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional: subtle top border for separation */
+}
+
+.text-white:hover {
+    text-decoration: underline; /* Optional: underline on hover for the link */
+}

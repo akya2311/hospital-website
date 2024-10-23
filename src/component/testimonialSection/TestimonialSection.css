@@ -1,0 +1,70 @@
+.testimonial-section {
+  padding: 50px 0;
+  background-color: #1B2C51;
+  margin-top: -3%;
+}
+
+.sec-title {
+  margin-bottom: 20px;
+}
+
+.afot {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  animation: scroll 30s linear infinite; /* Animation for automatic scroll */
+}
+
+.insurance-img {
+  margin-right: 4px;
+  transition: transform 0.3s ease-in-out;
+  width: 110px;
+  height: 110px;
+}
+
+.insurance-img:hover {
+  transform: scale(1.1);
+}
+
+/* Keyframes for automatic horizontal scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .scroll-content {
+    animation: scroll 20s linear infinite;
+  }
+
+  .insurance-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .insurance-img {
+    width: 100px;
+    height: 100px;
+  }
+}

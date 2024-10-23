@@ -1,0 +1,176 @@
+
+/* General container padding */
+.container-xxl {
+ 
+  margin-top: -5%;
+}
+
+/* Animations */
+.wow {
+  visibility: visible;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+
+
+
+
+
+/* Image styles */
+.abb {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem !important;
+  max-width: 100%;
+  height: auto;
+  width: 50% !important;
+  padding-top: 1rem !important;
+  background-color: #fff !important;
+ 
+  margin-top: -8%;
+  border-radius: 8px !important;
+  /* Make the image full width of its container */
+}
+.fluid-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Us title styling */
+.aaborder {
+  border: 2px solid #007bff; /* Thicker border for emphasis */
+  color: #007bff;
+  padding: 0.5rem 1rem; /* More padding for better appearance */
+}
+
+/* Headings and text */
+.hospital-name {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black; /* Darker color for better readability */
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.abtn2 {
+  background-color: #002858 !important;
+  color: #fff;
+  border-radius: 25px; /* Rounded button */
+}
+
+.abtn2:hover {
+  background-color: #002858;
+}
+
+/* Icons */
+.bi-check-circle {
+  margin-right: 15px;
+  color: #007bff; /* Consistent color for icons */
+}
+
+/* Utility classes for spacing */
+.mb-4 {
+  margin-bottom: 1.5rem;
+  
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+  .hospital-name {
+    font-size: 2rem; /* Reduce font size on smaller screens */
+  }
+
+  .abb {
+    width: 100%; /* Full width for mobile view */
+    margin-top: 1rem; /* Maintain margin */
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none; /* Removes default border */
+}
+
+/* SVG styles */
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* Container and image fluidity */
+
+/* Padding utility classes */
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+.pe-3 {
+  padding-right: 1rem !important;
+}
+
+.w-50 {
+  width: 50% !important; /* Keeps the image size */
+}
+
+/* Gutter styles */
+.g-5,
+.gx-5 {
+  --bs-gutter-x: 3rem; /* Adjusts horizontal spacing */
+}
+
+/* Ensures the image is left-aligned */
+.left-align {
+  float: left; /* Aligns image to the left */
+  margin-right: 1rem; /* Adds space to the right of the image */
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.acolor, .btn.btn-primary, .btn.btn-secondary, .popup .close:hover {
+  color: #fff;
+}
+a:hover, a:focus, a:visited {
+  text-decoration: none;
+  outline: none;
+}
+..btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.acolor, .btn.btn-primary, .btn.btn-secondary, .popup .close:hover {
+  color: #fff;
+}
+a:hover, a:focus, a:visited {
+  text-decoration: none;
+  outline: none;
+}
+.abtn2, .abtn2:hover {
+  background-color: #002858 !important;
+  border: #002858;
+}
+.btn {
+  font-weight: 500;
+  transition: .5s;
+}
+.rounded-pill {
+  border-radius: 50rem !important;
+  width: 180px !important;
+}

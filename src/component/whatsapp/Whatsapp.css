@@ -1,0 +1,43 @@
+
+
+.float {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    border-style: solid;
+    text-align: center;
+   border-color: #25d366;
+    position: fixed;
+
+
+  }
+  
+  .float:hover {
+    background-color: #25d366; /* WhatsApp's green color */
+  }
+  
+  .my-float {
+    font-size: 24px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+  
+  .fa-whatsapp:before {
+    content: "\f232";
+    font-family: "Font Awesome 5 Free"; /* Ensure FontAwesome is imported */
+    font-weight: 900;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  

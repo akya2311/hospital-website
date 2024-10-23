@@ -1,0 +1,45 @@
+/* Top Bar Styling */
+/* Header.css */
+
+.contact-bg-container{
+  background-color: #1B2C51;
+  height: 68px;
+  padding: 0%;
+}
+.acolor {
+  color: #333;
+}
+
+.btn-primary.abtn1 {
+  background-color: #007bff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.btn-primary.abtn1:hover {
+  background-color: #0056b3;
+}
+
+.abtn1 a {
+  text-decoration: none;
+  color: white; /* Ensures link text inside the button is white */
+}
+
+.abtn1 a:hover {
+  color: white;
+}
+
+.fa-whatsapp, .fa-phone {
+  font-size: 16px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .d-lg-flex {
+    display: block !important; /* Ensures visibility on smaller screens */
+  }
+}

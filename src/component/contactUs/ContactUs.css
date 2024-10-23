@@ -1,0 +1,110 @@
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1320px;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+
+.container-xxl {
+    padding: 5rem 0;
+}
+
+.card {
+    background-color: #002858 !important;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+.btn-primary {
+    
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+
+
+
+/* Additional styles for the contact form */
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.form-text {
+    color: white !important;
+}
+
+.d-flex {
+    display: flex !important;
+    align-items: center;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.text-primary {
+    color: #002551 !important;
+}
+.rounded-pill{
+    width: 160px;
+    text-align: center;
+
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-lg-4,
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.btn-primary {
+    background-color: #f0b25b;
+    border: #f0b25b;
+}
+
+.btn-primary:hover {
+    background-color: #0463FA;
+    border-color: #0463FA;
+}
+
+.alert-success {
+    background-color: var(--success);
+    color: var(--white);
+}
+
+.ml-3{
+    margin-left: 8px;
+}

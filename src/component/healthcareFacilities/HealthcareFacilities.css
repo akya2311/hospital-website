@@ -1,0 +1,242 @@
+
+/* Main container for layout */
+.bg-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Details container */
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B2C51;
+    width: 50%;
+    padding: 2rem;
+    height: 100%;
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 992px) {
+    .details-container {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .details-container2 {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+  /* Flex container for details */
+  .details-container2 {
+    max-width: 550px;
+    height: auto;
+  }
+  
+  /* Image container */
+  .w-50 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .w-50 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Adjust image container for smaller screens */
+  @media (max-width: 992px) {
+    .w-50 {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* General layout and spacing */
+  .p-lg-5 {
+    padding: 3rem;
+  }
+  
+  .ps-lg-0 {
+    padding-left: 0;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Column width adjustments */
+  .col-lg-6,
+  .col-sm-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  @media (max-width: 992px) {
+    .col-lg-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Features tag styles */
+  .aaborder {
+    border-color: #6c757d;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .aaborder:hover {
+    border-color: #007bff;
+  }
+  
+  /* Section heading */
+  .afot {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 576px) {
+    .afot {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Text color and margins */
+  .text-white {
+    color: #fff;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Icon circle styles */
+  .afac {
+    width: 60px;
+    height: 60px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .afac i {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  /* Spacing between icon and text */
+  .ms-4 {
+    margin-left: 1.5rem;
+  }
+  
+  /* Card content text */
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  @media (max-width: 576px) {
+    h5 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Custom background for icon circle */
+  .bg-light1 {
+    background-color: #f8f9fa;
+  }
+  
+  p{
+    background-color: transparent;
+  }
+
+  /* Flex container setup */
+
+  /* General container and layout styles */
+.container-fluid {
+    padding: 0;
+  }
+  
+  /* For larger devices (greater than 992px), layout as row */
+  .img-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* For small and medium devices, layout as column */
+  @media (max-width: 991px) {
+    .img-row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Image container styles */
+  .img-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .img-container img {
+    object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the container */
+    width: 100%;
+    height: 100%;
+    max-height: 500px; /* You can adjust the max-height as per your requirement */
+  }
+  
+  /* Text container styles */
+  .text-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .text-container h3 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Responsive text adjustments */
+  @media (max-width: 576px) {
+    .text-container h3 {
+      font-size: 1.5rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+    }
+  }
+  

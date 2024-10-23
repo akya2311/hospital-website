@@ -1,0 +1,60 @@
+/* BannerItem.css */
+
+.slick-carousel {
+  width: 100vw; /* Full viewport width */
+  margin-top: -1%;
+  padding-top: 0px;
+  overflow: hidden;
+  
+  }
+  
+  .slick-carousel .item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .slick-carousel img {
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+    object-fit: cover;
+  }
+  
+  .slick-dots {
+    bottom: 20px;
+  }
+  
+  
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .slick-prev, .slick-next {
+      display: none;
+    }
+  
+    .slick-carousel img {
+      height: auto;
+      
+    }
+  }
+  

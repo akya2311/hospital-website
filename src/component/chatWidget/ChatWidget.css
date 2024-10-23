@@ -1,0 +1,59 @@
+.mylivechat_inline {
+    position: fixed;
+    z-index: 9999;
+  }
+  
+  .mylivechat_collapsed, .mylivechat_expanded {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .mylivechat_sprite {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input
+
+
+
+  
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: rgb(2, 117, 216);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .contact-form .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  

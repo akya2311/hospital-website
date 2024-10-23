@@ -1,0 +1,78 @@
+.successful-cases-section{
+    background-color: #daebff; 
+}
+
+.aaborder, .acolor1, .search {
+    color: #000;
+}
+.rounded-pill {
+    border-radius: 50rem !important;
+}
+.py-1 {
+    padding-top: .25rem !important;
+    padding-bottom: .25rem !important;
+}
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+.border {
+    border: 1px solid Black !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+
+  
+  /* Text alignment and animation styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Section header styling */
+  .afot-Successful {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+    text-align: center !important;
+    background-color: #daebff; 
+    /* Dark text color */
+  }
+  
+  /* Testimonial label styles */
+  .aaborder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #007bff; /* Primary color */
+    border-color: #007bff; /* Primary border color */
+    padding: 10px 20px;
+  }
+  
+  /* Rounded border styles for the label */
+  .border {
+    border-width: 2px;
+  }
+  
+  .rounded-pill {
+    border-radius: 50px; /* Makes the border fully rounded */
+  }
+  
+  /* Animation styles for the wow fadeInUp effect */
+  
+  
+
+ 
+
+  .slide{
+    height: 340px;
+    width: 224px
+  }
+  
+  .slide-imges{
+    width: 100%;
+    height: 80%;
+  }

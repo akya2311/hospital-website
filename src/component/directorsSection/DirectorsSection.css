@@ -1,0 +1,90 @@
+/* Base styles */
+
+  
+  .container-xxl {
+   
+    padding: 60px 0;
+  }
+  
+  .afot {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c5364;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .director-card {
+    text-align: start;
+    background-color: #ffffff;
+    padding: 20px;
+   
+  }
+  
+  
+  
+  .director-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+   
+  }
+  
+  .director-card h4 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+  }
+  
+  .qualification {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    display: inline-block;
+    border: 2px solid #2c5364;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  
+  .link {
+    margin-top: 30px;
+  }
+  
+  .theme-btn.btn-style-four.our {
+    background-color: #2c5364;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-btn.btn-style-four.our:hover {
+    background-color: #203a43;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .afot {
+      font-size: 28px;
+    }
+  
+    .director-card h4 {
+      font-size: 22px;
+    }
+  
+    .qualification {
+      font-size: 14px;
+    }
+  
+    .theme-btn.btn-style-four.our {
+      font-size: 14px;
+    }
+  }
+  

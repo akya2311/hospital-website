@@ -1,0 +1,15 @@
+.container {
+    margin-top: 20px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.tab-content {
+    background: #f8f9fa; /* Light background for better contrast */
+}
+
+.border {
+    border-color: #007bff !important; /* Change border color */
+}

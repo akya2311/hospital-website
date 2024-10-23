@@ -1,0 +1,43 @@
+/* Gallery container adjustments */
+.gallery-container {
+    padding: 20px;
+}
+
+/* Gallery items */
+.gallery-img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Zoom effect on hover */
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Padding top for responsive spacing */
+.pt-5 {
+    padding-top: 30px;
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 768px) {
+    .pt-5 {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pt-5 {
+        padding-top: 15px;
+    }
+}
