@@ -1,59 +1,80 @@
-.mylivechat_inline {
-    position: fixed;
-    z-index: 9999;
-  }
+.chat-widget {
+  position: fixed;
+  bottom: 0;
+  right: 16px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
   
-  .mylivechat_collapsed, .mylivechat_expanded {
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .mylivechat_sprite {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .contact-form {
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  .contact-form input
+}
 
+.chat-collapsed {
+  background-color: #0275d8;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  width: 250px;
+  height: 50px;
+}
+.chat-collapsed svg {
+  height: 50px;
+  width: 50px
+}
 
+.chat-expanded {
+  background-color: white;
+  border: 1px solid #ddd;
+  min-height: 470px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.chat-expanded svg {
+  height: 50px;
+  width: 50px
+}
+.chat-header {
+  background-color: #0275d8;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
 
-  
-  .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .contact-form button {
-    background-color: rgb(2, 117, 216);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .contact-form .error {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .success-message {
-    color: green;
-    font-weight: bold;
-  }
-  
+.contact-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: #025aa5;
+}

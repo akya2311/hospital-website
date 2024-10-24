@@ -16,7 +16,7 @@ const HealthcareFacilities = () => {
 
           <div className="row g-4">
             <div className="col-lg-6 col-sm-12">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-start ">
                 <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light1 afac">
                   <i className="fa fa-user-md text-primary"></i>
                 </div>
@@ -28,7 +28,7 @@ const HealthcareFacilities = () => {
             </div>
 
             <div className="col-lg-6 col-sm-12">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-start container-4">
                 <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light1 afac">
                   <i className="fa fa-check text-primary"></i>
                 </div>
@@ -39,12 +39,12 @@ const HealthcareFacilities = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-sm-12">
-              <div className="d-flex align-items-center">
+            <div className="col-lg-6  col-sm-12 container-4">
+              <div className="d-flex align-items-start">
                 <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light1 afac">
                   <i className="fa fa-comment-medical text-primary"></i>
                 </div>
-                <div className="ms-4">
+                <div className="ms-4 ">
                   <p className="text-white mb-2">Positive</p>
                   <h5 className="text-white mb-0">Team Work</h5>
                 </div>
@@ -52,7 +52,7 @@ const HealthcareFacilities = () => {
             </div>
 
             <div className="col-lg-6 col-sm-12">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-start">
                 <div className="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light1 afac">
                   <i className="fa fa-headphones text-primary"></i>
                 </div>

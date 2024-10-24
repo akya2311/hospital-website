@@ -14,11 +14,13 @@ import Whatsapp from './component/whatsapp/Whatsapp';
 import Testimonial from './component/testimonial/Testimonial';
 import Gallery from './component/gallery/Gallery';
 import VaccinationGallery from './component/gallery/VaccinationGallery';
+import Contact from './component/contact/Contact';
 
 
 const App = () => {
   return (
       <Router>
+        <Contact/>
         <Header />
         <SocialNav />
         <Whatsapp />
