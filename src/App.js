@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-
-// Import the ServiceProvider and other components
-
 import Header from './component/header/Header';
 import HomePage from './component/homePage/HomePage';
 import Footer from './component/footer/Footer';
