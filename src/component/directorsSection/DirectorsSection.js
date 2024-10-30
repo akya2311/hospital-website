@@ -42,7 +42,7 @@ const DirectorsSection = () => {
 
         <center>
           <div className="link">
-            <a href="about-doctor.php" className="theme-btn btn-style-four our">
+            <a href="/about-docter" className="theme-btn btn-style-four our">
               View Profile
             </a>
           </div>
