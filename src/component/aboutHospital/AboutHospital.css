@@ -2,7 +2,7 @@
 /* General container padding */
 .container-xxl {
  
-  margin-top: -5%;
+  margin-top: -8%;
 }
 
 /* Animations */
@@ -11,9 +11,6 @@
   animation-name: fadeIn;
   animation-duration: 1s;
 }
-
-
-
 
 
 
@@ -34,6 +31,7 @@
 .fluid-img {
   max-width: 100%;
   height: auto;
+  margin-left: -50%;
 }
 
 /* About Us title styling */

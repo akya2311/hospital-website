@@ -15,6 +15,7 @@ import Testimonial from './component/testimonial/Testimonial';
 import Gallery from './component/gallery/Gallery';
 import VaccinationGallery from './component/gallery/VaccinationGallery';
 import Contact from './component/contact/Contact';
+import ReadMore from './component/readMore/ReadMore';
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/vaccinationGallery" element={<VaccinationGallery />} />
+          <Route path="/read-more" element={<ReadMore />} />
         </Routes>
         
         <Footer />

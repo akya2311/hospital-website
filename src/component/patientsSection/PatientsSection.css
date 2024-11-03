@@ -2,6 +2,7 @@
 .testimonial-carousel {
     padding: 50px 20px;
     background-color: #f9f9f9; /* Light background */
+    
 }
 
 .section-title {
@@ -12,6 +13,7 @@
 
 .testimonial-item {
     transition: transform 0.3s ease-in-out;
+    
 }
 
 .testimonial-item:hover {
@@ -25,6 +27,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+    height: 300px;
 }
 
 .testimonial-text p {

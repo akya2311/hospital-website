@@ -65,7 +65,7 @@ const AboutHospital = () => {
                 <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
               </svg> FHPL Family Health Plan Insurance TPA Limited
             </p>
-            <a className="btn btn-primary rounded-pill  py-3 px-5 mt-3 abtn2" href="about.php">
+            <a className="btn btn-primary rounded-pill  py-3 px-5 mt-3 abtn2" href="/read-more">
               Read More
             </a>
           </div>

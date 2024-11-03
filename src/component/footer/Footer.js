@@ -98,7 +98,7 @@ const Footer = () => {
                                 <a className="text-white" href="mailto:paarasmanihospital20@gmail.com">paarasmanihospital20@gmail.com</a>
                             </p>
 
-                            <div className="d-flex flex-wrap justify-content-center pt-2">
+                            <div className="d-flex flex-wrap justify-content-center icon-section pt-2">
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"

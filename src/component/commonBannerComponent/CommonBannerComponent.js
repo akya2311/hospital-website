@@ -1,7 +1,5 @@
 import React from 'react';
 import './CommonBannerComponent.css';
-import TestimonialSection from '../testimonialSection/TestimonialSection'
-
 const CommonBannerComponent = ({ name }) => {
   return (
     

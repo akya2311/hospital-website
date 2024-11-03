@@ -14,10 +14,14 @@
     padding: 5rem 0;
 }
 
-.card {
+.contact-card {
     background-color: #002858 !important;
     border-radius: 8px;
     transition: transform 0.2s;
+}
+.card{
+    background-color: #002858 !important;
+    display: flex !important;
 }
 
 

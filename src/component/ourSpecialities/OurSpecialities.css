@@ -1,84 +1,236 @@
 
 
-.card {
+/* Container styling */
+.featured-service .inner-box {
     position: relative;
-    margin: 10px; /* Add some space between cards */
-    border: none;
+   
+}
+
+.featured-service .image-box {
+    position: relative;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    
 }
 
-.card img {
+/* Image styling */
+.featured-service .image-box figure.image {
+    margin: 0;
+}
+
+.featured-service .image-box img {
     width: 100%;
-    height: auto;
+    min-height: 295px;
 }
 
-/* The overlay at the bottom, initially visible */
-.card .card-overlay {
+/* Caption box styling */
+.featured-service .caption-box {
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    background-color: rgba(135, 206, 235, 0.9); /* Sky blue with slight transparency */
-    color: black;
-    padding: 10px;
-    display: flex; /* Make the overlay content align in a row */
-    align-items: center;
-    z-index: 2;
-    transition: transform 0.5s ease-in-out; /* Add smooth transition for overlay */
+  
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 15px 20px 112px;
+    color: #222222;
+    font-weight: 700;
+    transition: all 500ms ease;
+   
+
+
+   
+     /* Add smooth transition for overlay */
+
 }
 
-.icon {
-    font-size: 2rem;
-    margin-right: 10px;
-    padding: 10px; /* Padding around the icon */
-}
-
-.text {
-    flex-grow: 1; /* Make the text take up the remaining space */
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-/* The full hover overlay */
-.card .hover-content {
+.featured-service .caption-box .icon {
     position: absolute;
-    top: 100%; /* Initially hidden below the card */
+    left: 0;
+    top: 0;
+    
+    width: 70px;
+    height: 100px;
+    font-size: 38px;
+    background: rgb(28, 152, 218);
+    color: #beff9b;
+    text-align: center;
+    line-height: 40px;
+    padding: 28px 0;
+}
+
+.featured-service .caption-box .icon::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 52px solid transparent;
+    border-left: 25px solid rgb(28, 152, 218);
+    border-bottom: 52px solid transparent;
+}
+
+/* Title styling */
+.featured-service .caption-box .title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.featured-service .caption-box .title a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.fa-user-md:before {
+    content: "\f0f0";
+    
+}
+
+/* Overlay styling */
+.featured-service .overlay-box {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(66, 182, 228, 0.9);
-    color: white;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
     opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: opacity 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+   
+           
+
 }
 
-.card:hover .card-overlay {
-    transform: translateY(100%); /* Move the overlay down on hover */
-}
-
-.card:hover .hover-content {
-    transform: translateY(-100%); /* Slide the content up on hover */
+.featured-service .overlay-box:hover{
     opacity: 1;
+    
 }
 
-.sec-title {
-    margin: 40px 0; /* Margin for spacing */
+.featured-service .overlay-inner {
+    text-align: center;
 }
 
-.sec-title h2 {
-    font-size: 2.5rem; /* Adjust font size */
-    color: #333; /* Text color */
+.featured-service .overlay-content .title a {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.sec-title h2 strong {
-    color: #007bff; /* Strong text color */
+.featured-service .overlay-content .text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.sec-title span {
-    display: block; /* Display as block for spacing */
-    font-size: 1.2rem; /* Adjust font size */
-    color: #666; /* Secondary text color */
-    margin-top: 10px; /* Space between title and subtitle */
+
+
+.featured-service .overlay-box {
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    color: #fffcfc;
+    background: rgba(4, 111, 169, 0.72);
+    padding: 20px 30px 20px 90px;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+}
+
+
+
+.featured-service .overlay-box .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 100%;
+    font-size: 42px;
+    color: #242721;
+    background: rgba(255, 255, 255, .8);
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+.featured-service .overlay-box .overlay-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+    padding: 20px 30px 20px 112px;
+}
+
+
+.featured-service .overlay-box .icon-box::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 135px solid transparent;
+    border-left: 25px solid rgba(255, 255, 255, .8);
+    border-bottom: 135px solid transparent;
+}
+
+
+
+.featured-service .overlay-box .icon-box span {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -20px;
+    width: 100%;
+    padding-left: 13px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.fa-user-md:before {
+    content: "\f0f0";
+}
+.fa-user-md:before {
+    content: "\f0f0";
+}
+
+
+.featured-service .overlay-box .overlay-content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.featured-service .overlay-box .title {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.featured-service .overlay-box .text {
+    font-size: 17px;
+    color: #fff8f8;
+    line-height: 26px;
+    font-weight: 500;
 }

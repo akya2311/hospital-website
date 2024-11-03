@@ -18,71 +18,85 @@ const OurSpecialities = () => {
     {
       id: 3,
       title: "Gastroenterology",
-      description: "Paarasmani Hospital, located in Pune, is known for providing comprehensive medical care in various specialties, including",
+      description: "Paarasmani Hospital, located in Pune, is known for providing comprehensive medical care in various specialties, including Gastroenterology",
       imageUrl: "https://paarasmanihospital.com/img/gastroenterology%20(1)%20(1)%20(1).webp",
     },
     {
-      id: 4,
-      title: "Endoscopy",
-      description: "Welcome to Paarasmani Hospital, the forefront of endoscopy treatment and diagn",
-      imageUrl: "https://paarasmanihospital.com/img/endoscopy%20(1).webp",
+        id: 4,
+        title: "Endoscopy",
+        description: "Welcome to Paarasmani Hospital, the forefront of endoscopy treatment and diagnostics in Pune.",
+        imageUrl: "https://paarasmanihospital.com/img/endoscopy%20(1).webp",
+        link: "endoscopy-in-pune.php",
     },
     {
-      id: 5,
-      title: "Gynaec Laparoscopy Surgery",
-      description: "Paarasmani Hospital is one of the leading medical facilities in Pune known for its expertise in gynecological laparoscopic surgery.",
-      imageUrl: "https://paarasmanihospital.com/img/gyno-Laparoscopic-Surgery.jpg",
+        id: 5,
+        title: "Gynaec Laparoscopy Surgery",
+        description: "Paarasmani Hospital is one of the leading medical facilities in Pune known for its expertise in gynecological laparoscopic surgery.",
+        imageUrl: "https://paarasmanihospital.com/img/gyno-Laparoscopic-Surgery.jpg",
+        link: "gynaec-laparoscopic-surgeon-in-pune.php",
     },
     {
-      id: 6,
-      title: "Obesity Surgery",
-      description: "obesity surgeon, also known as a bariatric surgeon, specializes in performing surgical procedures to help patients manage obesity and achieve weight loss",
-      imageUrl: "https://paarasmanihospital.com/img/weightloss-surgery%20(1).webp",
+        id: 6,
+        title: "Obesity Surgery",
+        description: "Obesity surgeon, also known as a bariatric surgeon, specializes in performing surgical procedures to help patients manage obesity and achieve weight loss.",
+        imageUrl: "https://paarasmanihospital.com/img/weightloss-surgery%20(1).webp",
+        link: "obesity-surgery-in-pune.php",
     },
     {
-      id: 7,
-      title: "Hernia/Piles/Fissures & Other Anorectal Problems",
-      description: "The Department of General Surgery at Aayush Multispecility Hospital focuses on abdominal organs such as pancreas,",
-      imageUrl: "https://paarasmanihospital.com/img/Hernia-Surgery%20(1).webp",
+        id: 7,
+        title: "Hernia/Piles/Fissures ",
+        description: "The Department of General Surgery at Paarasmani Hospital focuses on abdominal organs such as pancreas.",
+        imageUrl: "https://paarasmanihospital.com/img/Hernia-Surgery%20(1).webp",
+        link: "#", // Update the link as necessary
     },
-    {
-      id: 8,
-      title: "Gynaec Laparoscopic (Keyhole/ Scarless) Surgery",
-      description: "where we take great satisfaction in providing state-of-the-art medical care and skilled surgical treatment. Laparoscopic (Keyhole/Scarless) Surgery",
-      imageUrl: "https://paarasmanihospital.com/img/Laparoscopic-Surgery.jpg",
-    },
-  ];
+];
+
 
   return (
     <div className="container">
       <div className="sec-title text-center">
-            <h2 className="afot">
-                Our Specialities
-            </h2>
-            <span>What We Do</span>
-        </div>
+        <h2 className="afot">Our Specialities</h2>
+        <span>What We Do</span>
+      </div>
       <div className="row">
-        {cardsData.map(card => (
+        {cardsData.map((card) => (
           <div className="col-md-4 mb-4" key={card.id}>
-            <div className="card position-relative">
-              <img src={card.imageUrl} alt={card.title} className="card-img-top" />
-              <div className="card-overlay">
-                <div className="icon-container">
-                  <span className="icon">👨‍⚕</span>
+            <div className="featured-service">
+              <div className="inner-box">
+                <div className="image-box">
+                  <figure className="image">
+                    <a href="#">
+                      <img src={card.imageUrl} alt={card.title} />
+                    </a>
+                  </figure>
+                  <div className="caption-box">
+                    <div className="icon">
+                      <span className="fa fa-user-md"></span>
+                    </div>
+                    <h4 className="title">
+                      <a href="#">{card.title}</a>
+                    </h4>
+                  </div>
+                  <div className="overlay-box">
+                    <div className="icon-box">
+                      <span className="fa fa-user-md"></span>
+                    </div>
+                    <div className="overlay-inner">
+                      <div className="overlay-content">
+                        <h4 className="title">
+                          <a href="#">{card.title}</a>
+                        </h4>
+                        <div className="text">{card.description}</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div className="text">{card.title}</div>
-              </div>
-              <div className="hover-content">
-                <span className="icon">👨‍⚕</span>
-                <h5>{card.title}</h5>
-                <p>{card.description}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </div>
   );
 };
 
